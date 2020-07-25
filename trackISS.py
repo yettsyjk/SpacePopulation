@@ -1,5 +1,11 @@
+# Using Python requests and the Google Maps Geocoding API.
+#
+# References:
+#
+# * http://docs.python-requests.org/en/latest/
+# * https://developers.google.com/maps/
 from geopy.distance import geodesic
-import request, json, geocoder, time
+import requests, json, geocoder, time
 
 def callStation():
     lat = (requests.get("http://api.open-notify.org/iss-now.json")).json()['iss_position']['latitude']
@@ -21,18 +27,18 @@ def calcDistance(firstKnown, currentKnown):
 
 data = (requests.get("http://api.open-notify.org/astros.json")).json();print("Data request : ", (data['message'])),print("Total humans in orbit: ", data['number'],"\nPrinting manifest: ")
 for i in range(len(data['people'])):
-        print(("%s is currently in space aboard the %s." % ((data['people'][i]['name']), (data['people'][i]['craft']))))
-        for i in range(6):
-            if i < 1:
-                lastKnown = callStation()
-                firstKnown = lastKnown
-                time.sleep(10)
-            elif i < 5:
-                currentKnown = callStation()
-                lastKnown = callDistance(lastKnown, currentKnown)
-                time.sleep(10)
+    print(("%s is currently in space aboard the %s." % ((data['people'][i]['name']), (data['people'][i]['craft']))))
+for i in range(6):
+    if i < 1:
+        lastKnown = callStation()
+        firstKnown = lastKnown
+        time.sleep(10)
+    elif i < 5:
+        currentKnown = callStation()
+        lastKnown = callDistance(lastKnown, currentKnown)
+        time.sleep(10)
 
-            elif i == 5:
-                print("FINAL ROUND: ")
-                currentKnown = callStation()
-                calcDistance(firstKnown, currentKnown)
+    elif i == 5:
+        print("FINAL ROUND: ")
+        currentKnown = callStation()
+        calcDistance(firstKnown, currentKnown)
