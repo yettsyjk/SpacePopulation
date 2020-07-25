@@ -1,4 +1,5 @@
-### Current Manifest Space Population aboard ISS
+### Third Party APIs using Python3
+Current Manifest Space Population aboard ISS and location within 10 second timeout
 
 
 
@@ -12,10 +13,13 @@
 6. [stackoverflow](https://stackoverflow.com/) 
    
 ### Lessons Learned
-1. After converting for bash to zshrc, the frustration of converting alias and environment to zshrc from bash
+1. After converting from bash to zshrc, the frustration of converting alias and environment to zshrc from bash
 1. pip or pip3 install, documentation indicated pip but my shell commands required pip3
-1. Every day coding and the importance of indentation in Python
-   
+1. Every day coding and the importance of indentation in Python scripts
+
+### I had such a great time working with third-party API's and getting back into Python scripts after my Java 16-week immersive, code everyday!
+[Yettsy Knapp](https://www.linkedin.com/in/yettsy-jo-knapp/) Denver, CO July 2020
+
 ### Output from terminal
 ``` Data request :  success
 Total humans in orbit:  5 
@@ -37,5 +41,4 @@ Landmarks the station is visible from:  None
 See location:  http://www.google.com/maps/place/-0.1267,-139.3336
 ISS has traveled at approx  92.04442885156027 miles in 10 seconds. 
 
-### I had such a great time working with third-party API's and getting back into Python scripts after my Java 16-week immersive, code everyday!
-[Yettsy Knapp](https://www.linkedin.com/in/yettsy-jo-knapp/) Denver, CO July 2020
+
