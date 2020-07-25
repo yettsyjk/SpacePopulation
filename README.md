@@ -35,7 +35,7 @@ ISS has traveled at approx  44.954321713706754 miles in 10 seconds.
 Target acquired, tracking active: the location of the ISS is -0.1267, -139.3336.
 Landmarks the station is visible from:  None
 See location:  http://www.google.com/maps/place/-0.1267,-139.3336
-ISS has traveled at approx  92.04442885156027 miles in 10 seconds. ```
+ISS has traveled at approx  92.04442885156027 miles in 10 seconds. 
 
-### I had such a great time working with API's and getting back into Python after my Java 16-week immersive, code everyday!
+### I had such a great time working with third-party API's and getting back into Python scripts after my Java 16-week immersive, code everyday!
 [Yettsy Knapp](https://www.linkedin.com/in/yettsy-jo-knapp/) Denver, CO July 2020
